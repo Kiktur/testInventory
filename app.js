@@ -5,7 +5,7 @@ app = express();
 
 const router = express.Router()
 const db = require("./database.js");
-const port = 3003 || process.env.PORT;
+const port = 3006 || process.env.PORT;
 // Defines variables referring to the routing files for fetch requests
 const itemRouter = require('./routes/itemsRoute.js');
 const updateRouter = require('./routes/updateVal.js');
