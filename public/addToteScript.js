@@ -4,7 +4,7 @@ function submit() {
     let name = document.getElementById("tote-name");
     let description = document.getElementById("tote-description");
     
-    fetch(`https://rpl.usc.edu/packing/totes`, {
+    fetch(`https://rpl.usc.edu/packing/packingtotes`, {
         method: "POST",
         body: JSON.stringify({
             name: name.value,

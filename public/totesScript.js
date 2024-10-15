@@ -26,7 +26,7 @@ let globalData;
 // Handles making an API query when a search is made
 function dataFetch() {
   // TODO: add search queries
-  fetch(`https://rpl.usc.edu/packing/totes?searchType=${searchType.value}&searchTerm=${searchTerm.value}`)
+  fetch(`https://rpl.usc.edu/packing/packingtotes?searchType=${searchType.value}&searchTerm=${searchTerm.value}`)
     .then((response) => response.json())
     .then((data) => dataInit(data.data))
     .catch(function() {

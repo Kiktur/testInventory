@@ -23,7 +23,7 @@ let currentQuants = [];
 let toteMap = {};
 
 async function fetchIds() {
-  await fetch(`https://rpl.usc.edu/packing/items/get-tote-names`)
+  await fetch(`https://rpl.usc.edu/packing/packingitems/get-tote-names`)
     .then((response) => response.json())
     .then((data) => {
       toteMap = data;
@@ -58,7 +58,7 @@ async function dataFetch() {
    }
  
    // Make the fetch request with the constructed query
-   fetch(`https://rpl.usc.edu/packing/items?${params.toString()}`)
+   fetch(`https://rpl.usc.edu/packing/packingitems?${params.toString()}`)
      .then((response) => response.json())
      .then((data) => dataInit(data.data))
      .catch(function() {

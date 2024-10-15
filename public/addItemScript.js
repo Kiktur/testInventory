@@ -7,7 +7,7 @@ function submit() {
     let lab_location = document.getElementById("lab_location");
     let num = document.getElementById("num");
     
-    fetch(`https://rpl.usc.edu/packing/items`, {
+    fetch(`https://rpl.usc.edu/packing/packingitems`, {
         method: "POST",
         body: JSON.stringify({
             name: name.value,
