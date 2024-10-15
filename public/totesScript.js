@@ -129,6 +129,6 @@ function deleteBoard(index) {
       .then((response) => response.json())
       .then((json) => console.log(json));
   }
-  location.href = "/totes";
+  location.href = "/packing/totes";
   
 }

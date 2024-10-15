@@ -23,7 +23,7 @@ function submit() {
         .then((response) => response.json())
         .then((json) => console.log(json));
         alert("Item has been added");
-    location.href = "/items";
+    location.href = "/packing/items";
     
 }
 

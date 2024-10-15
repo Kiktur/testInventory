@@ -17,7 +17,7 @@ function submit() {
         .then((response) => response.json())
         .then((json) => console.log(json));
         alert("Tote has been added");
-    location.href = "/totes";
+    location.href = "/packing/totes";
 
 }
 
