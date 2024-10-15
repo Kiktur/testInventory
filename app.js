@@ -28,14 +28,14 @@ app.get('/', (req, res) => {
 });
 
 // Directs routes for post requests
-app.use('/items', itemRouter);
-app.use('/updateVal', updateRouter);
-app.use('/deleteItem', deleteItemRouter);
-app.use('/totes', toteRouter);
-app.use('/deleteTote', deleteToteRouter);
+app.use('/packing/items', itemRouter);
+app.use('/packing/updateVal', updateRouter);
+app.use('/packing/deleteItem', deleteItemRouter);
+app.use('/packing/totes', toteRouter);
+app.use('/packing/deleteTote', deleteToteRouter);
 
-app.use('/editBoards', editBoardsRouter);
-app.use('/getBoard', viewBoardRouter);
+// app.use('/editBoards', editBoardsRouter);
+// app.use('/getBoard', viewBoardRouter);
 
 
 
