@@ -28,14 +28,14 @@ app.get('/', (req, res) => {
 });
 
 // Directs routes for post requests
-app.use('/packinv/items', itemRouter);
-app.use('/packinv/updateVal', updateRouter);
-app.use('/packinv/deleteItem', deleteItemRouter);
-app.use('/packinv/totes', toteRouter);
-app.use('/packinv/deleteTote', deleteToteRouter);
+app.use('/packing/items', itemRouter);
+app.use('/packing/updateVal', updateRouter);
+app.use('/packing/deleteItem', deleteItemRouter);
+app.use('/packing/totes', toteRouter);
+app.use('/packing/deleteTote', deleteToteRouter);
 
-app.use('/packinv/editBoards', editBoardsRouter);
-app.use('/packinv/getBoard', viewBoardRouter);
+app.use('/packing/editBoards', editBoardsRouter);
+app.use('/packing/getBoard', viewBoardRouter);
 
 
 
@@ -52,7 +52,7 @@ app.use(express.static(__dirname + '/public'));
 app.set("view engine", "ejs");
 
 // The following are get commands to render ejs files when the directory in a browser matches the /___ keyword
-// NOTE: For the server, file paths need a /packinv before the page title ex. /packinv/index or /packinv/parts
+// NOTE: For the server, file paths need a /packing before the page title ex. /packing/index or /packing/parts
 // For localhost, leave as /___ ex. /index or /parts
 
 app.get('/index', function (req, res) {
